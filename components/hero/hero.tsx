@@ -1,12 +1,13 @@
 import React from "react";
 import VidBg from "./components/background";
 import Image from "next/image";
+import WatchBtn from "./components/watch-btn";
 
 const Hero: React.FC = () => {
   return (
     <div className="bg-video relative flex flex-col justify-center h-screen w-full bg-video">
       <VidBg />
-      <div className="inner-cont relative grid grid-cols-[1fr_3fr_4fr_1fr] items-center text-center w-full mt-7">
+      <div className="inner-cont relative grid grid-cols-[1fr_5fr_1fr] md:grid-cols-[1fr_3fr_4fr_1fr] items-center text-center w-full mt-7">
         <div className="empty"></div>
         <div className="inner-inner flex flex-col">
           <div className="hero-logo">
@@ -19,8 +20,14 @@ const Hero: React.FC = () => {
               Mid-Season Invitational
             </p>
             <br />
-            <p>Tune in to Play-ins and Brackets,</p>
-            <p>and don&apos;t miss the Finals</p>
+            <p>
+              Tune in to Play-ins and Brackets,
+              <br />
+              and don&apos;t miss the Finals
+            </p>
+          </div>
+          <div className="mt-5">
+            <WatchBtn />
           </div>
         </div>
       </div>

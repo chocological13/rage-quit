@@ -22,8 +22,8 @@ const NavIcon: React.FC = () => {
       <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
         {isHovered ? redLogo : lightLogo}
         <span className="self-center text-xl font-medium whitespace-nowrap dark:text-white uppercase">
-          <p className={isHovered ? "text-[#ff0000]" : "text-white"}>RageQuit</p>
-          <p className={isHovered ? "text-[#ff0000]" : "text-white"}>Games</p>
+          <p className={isHovered ? "text-ragered" : "text-white"}>RageQuit</p>
+          <p className={isHovered ? "text-ragered" : "text-white"}>Games</p>
         </span>
       </Link>
     </div>

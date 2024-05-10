@@ -36,7 +36,7 @@ const NavLinks: React.FC<NavLinksProps> = ({ name, path }: { name: string; path:
   console.log("props: " + name + path);
 
   return (
-    <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className={`${isHovered ? "bg-red-200 px-2 p-1 rounded-md" : ""} list-style-none uppercase`}>
+    <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className={`${isHovered ? "bg-ragered w-fit rounded-md" : ""} list-style-none uppercase p-2`}>
       <Link href={`${path}`}>{name}</Link>
     </li>
 

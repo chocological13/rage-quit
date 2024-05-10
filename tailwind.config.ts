@@ -10,7 +10,8 @@ const config: Config = {
       },
       colors: {
         navblack: "#181414",
-        navsearch: "#302c2c"
+        navsearch: "#302c2c",
+        ragered: "#d8343c"
       }
     }
   },

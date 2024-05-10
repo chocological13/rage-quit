@@ -1,17 +1,17 @@
-"use client";
-import { createContext } from "react";
+// "use client";
+// import { createContext } from "react";
 
-interface HoverContextType {
-  isHovered: boolean;
-  setIsHovered: () => void;
-  handleMouseEnter?: () => void;
-}
+// interface HoverContextType {
+//   isHovered: boolean;
+//   setIsHovered: () => void;
+//   handleMouseEnter?: () => void;
+// }
 
-const defaultValue = {
-  isHovered: false,
-  setIsHovered: () => {}
-};
+// const defaultValue = {
+//   isHovered: false,
+//   setIsHovered: () => {}
+// };
 
-const HoverContext = createContext<HoverContextType>(defaultValue);
+// const HoverContext = createContext<HoverContextType>(defaultValue);
 
-export default HoverContext;
+// export default HoverContext;

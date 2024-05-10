@@ -21,7 +21,7 @@ const NavBar: React.FC = () => {
   ];
 
   return (
-    <nav className="bg-transparent w-full h-[70px] text-white fixed z-20 top-0 start-0 grid grid-cols-[1fr_5fr_1fr_1fr]">
+    <nav className="bg-navblack w-full h-navheight text-white fixed z-20 top-0 start-0 grid grid-cols-[1fr_5fr_1fr_1fr]">
       <NavIcon />
       <div className="items-center my-auto hidden w-full md:block" id="navbar-search">
         <ul className="flex flex-row text-left justify-start align-middle gap-5">

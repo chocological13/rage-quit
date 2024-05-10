@@ -1,14 +1,30 @@
 import React from "react";
+import VidBg from "./components/background";
+import Image from "next/image";
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative flex h-screen w-full bg-video">
-      <div className="bg-video bg-cover bg-center fixed inset-0 overflow-hidden">
-        <video className="w-full h-full object-cover" autoPlay muted loop>
-          <source src="https://res.cloudinary.com/dymumlmnn/video/upload/v1715324973/who-we-are-video_cs1qkr.webm" type="video/mp4" />
-        </video>
+    <div className="bg-video relative flex flex-col justify-center h-screen w-full bg-video">
+      <VidBg />
+      <div className="inner-cont relative grid grid-cols-[1fr_3fr_4fr_1fr] items-center text-center w-full mt-7">
+        <div className="empty"></div>
+        <div className="inner-inner flex flex-col">
+          <div className="hero-logo">
+            <Image src="/hero-logo.png" width={384} height={293} alt="hero-logo" />
+          </div>
+          <div className="text mt-16 text-white">
+            <p className="text-3xl">
+              Realm of Rivals
+              <br />
+              Mid-Season Invitational
+            </p>
+            <br />
+            <p>Tune in to Play-ins and Brackets,</p>
+            <p>and don&apos;t miss the Finals</p>
+          </div>
+        </div>
       </div>
-      <div className="relative flex items-center text-center px-[80px] w-full">Hero</div>
+      <div></div>
     </div>
   );
 };

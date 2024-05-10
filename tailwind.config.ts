@@ -12,6 +12,12 @@ const config: Config = {
         navblack: "#181414",
         navsearch: "#302c2c",
         ragered: "#d8343c"
+      },
+      spacing: {
+        navheight: "80px"
+      },
+      fontFamily: {
+        ffmark: ["FF Mark Pro"]
       }
     }
   },

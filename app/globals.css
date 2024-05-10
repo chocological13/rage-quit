@@ -1,8 +1,19 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
-.bg-video {
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+  font-family: "FF Mark Pro";
+  src: url("/FontFont_FF.Mark.Pro.Black.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* .bg-video {
   position: absolute;
   top: 0;
   left: 0;
@@ -18,4 +29,4 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */

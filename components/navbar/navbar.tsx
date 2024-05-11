@@ -35,7 +35,7 @@ const NavBar: React.FC = () => {
           <SearchBar />
         </div>
       </div>
-      <div className="relative flex items-center align-middle justify-center mt-2">
+      <div className="relative flex items-center align-middle justify-center mt-2 w-3/4">
         <SignInBtn />
       </div>
     </nav>

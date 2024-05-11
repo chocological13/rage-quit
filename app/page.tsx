@@ -5,7 +5,7 @@ import CompOv from "@/components/comp-overview";
 
 export default function Home() {
   return (
-    <main className="bg-ragewhite">
+    <main className="bg-ragewhite w-screen h-screen">
       <NavBar />
       <Hero />
       <CompOv />

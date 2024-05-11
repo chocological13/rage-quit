@@ -13,6 +13,11 @@
   font-style: normal;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* .bg-video {
   position: absolute;
   top: 0;

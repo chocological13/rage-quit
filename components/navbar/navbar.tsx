@@ -11,7 +11,7 @@ const NavBar: React.FC = () => {
       path: "/aboutus"
     },
     {
-      name: "Products/Services",
+      name: "Games & Experiences",
       path: "/products"
     },
     {

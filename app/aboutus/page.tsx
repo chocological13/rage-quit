@@ -1,5 +1,5 @@
 import React from "react";
-import SideMenu from "../../components/side-menu";
+import SideMenu from "../../components/side-menu/side-menu";
 
 const AboutUs: React.FC = () => {
   return (

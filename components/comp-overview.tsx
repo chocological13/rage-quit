@@ -2,7 +2,7 @@ import React from "react";
 
 const CompOv: React.FC = () => {
   return (
-    <div className="w-full h-screen my-52 flex flex-col items-center px-1 md:px-0 selection:text-white selection:bg-ragered">
+    <div className="w-full my-36 flex flex-col items-center px-1 md:px-0">
       <p className="font-bold text-6xl mb-20 text-center">
         We aspire to be the most player-focused
         <br />

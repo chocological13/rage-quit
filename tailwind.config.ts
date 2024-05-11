@@ -12,7 +12,8 @@ const config: Config = {
         navblack: "#181414",
         navsearch: "#302c2c",
         ragered: "#d8343c",
-        ragewhite: "#e8e4e4"
+        ragewhite: "#e8e4e4",
+        bgblack: "#201c1c"
       },
       spacing: {
         navheight: "80px"

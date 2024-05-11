@@ -18,6 +18,9 @@ const config: Config = {
       },
       fontFamily: {
         ffmark: ["FF Mark Pro"]
+      },
+      boxShadow: {
+        heroBtn: "0 10px 45px -10px rgba(11, 196, 226, .15), 0 0 20px -10px rgba(11, 196, 226, .35), 0 10px 30px -10px rgba(11, 196, 226, .25);"
       }
     }
   },

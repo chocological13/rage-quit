@@ -20,7 +20,10 @@ const NavLinks: React.FC<NavLinksProps> = ({ name, path }: { name: string; path:
 
   return (
     <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className={`${isHovered ? "bg-ragered w-fit rounded-md" : ""} list-style-none uppercase p-2`}>
-      <Link href={`${path}`}>{name}</Link>
+      <Link href={`${path}`}>
+        {name}
+        <div className="sr-only">{name}</div>
+      </Link>
     </li>
   );
 };

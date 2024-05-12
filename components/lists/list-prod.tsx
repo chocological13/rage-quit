@@ -1,5 +1,6 @@
 import React from "react";
 import ProductList from "./components/list";
+import { title } from "process";
 
 const ListProd: React.FC = () => {
   const DATA = [
@@ -30,6 +31,36 @@ const ListProd: React.FC = () => {
           img: "/games-lor.png",
           alt: "games-lor",
           title: "Runeterra CLASH"
+        }
+      ]
+    },
+    {
+      section: "Esports",
+      props: [
+        {
+          img: "/esports-lol.png",
+          alt: "esports-lol",
+          title: "Rivalry ROYALE"
+        },
+        {
+          img: "/esports-val.png",
+          alt: "esports-val",
+          title: "Valorant VALOR CUP"
+        }
+      ]
+    },
+    {
+      section: "Entertainment",
+      props: [
+        {
+          img: "/ent-arc.png",
+          alt: "ent-arc",
+          title: "ARCADIA"
+        },
+        {
+          img: "/ent-mus.png",
+          alt: "ent-mus",
+          title: "Rage BEATS"
         }
       ]
     }

@@ -11,7 +11,7 @@ const ProductList: React.FC<ListProps> = ({ section, props }: { section: string;
   const lastChild = props[props.length - 1];
 
   return (
-    <div className="w-full my-36 bg-bgblack overflow-auto">
+    <div className="w-full Py-36 bg-bgblack overflow-auto">
       <div className="px-10 mt-24">
         <p className="text-white text-5xl font-semibold">{section}</p>
         <div className="grid md:grid-cols-2 gap-10 mt-10 items-center">

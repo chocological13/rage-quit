@@ -1,6 +1,6 @@
 import React from "react";
 import ProductList from "./components/list";
-import { title } from "process";
+import CarouselForge from "./components/carousel";
 
 const ListProd: React.FC = () => {
   const DATA = [
@@ -67,11 +67,14 @@ const ListProd: React.FC = () => {
   ];
 
   return (
-    <div>
-      {DATA.map((prod) => (
-        <ProductList key={prod.section} section={prod.section} props={prod.props} />
-      ))}
-    </div>
+    <>
+      <div>
+        {DATA.map((prod) => (
+          <ProductList key={prod.section} section={prod.section} props={prod.props} />
+        ))}
+      </div>
+      <CarouselForge />
+    </>
   );
 };
 

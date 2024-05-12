@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 
-interface CardProps {
+export interface CardProps {
   img: string;
   alt: string;
   title: string;

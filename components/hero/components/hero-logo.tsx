@@ -22,7 +22,7 @@ const HeroLogo: React.FC = () => {
         </p>
       </div>
       <div className="my-3">
-        <CTABtn />
+        <CTABtn title="Watch Now" link="https://youtu.be/dQw4w9WgXcQ?si=5Yd1KvKITVdUq_ln" />
       </div>
     </>
   );

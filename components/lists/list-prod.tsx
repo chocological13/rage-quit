@@ -1,6 +1,7 @@
 import React from "react";
 import ProductList from "./components/list";
 import CarouselForge from "./components/carousel";
+import CTAProd from "./components/cta-prod";
 
 const ListProd: React.FC = () => {
   const DATA = [
@@ -74,6 +75,7 @@ const ListProd: React.FC = () => {
         ))}
       </div>
       <CarouselForge />
+      <CTAProd />
     </>
   );
 };

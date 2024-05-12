@@ -2,7 +2,7 @@ import React from "react";
 
 const CompOv: React.FC = () => {
   return (
-    <div className="w-full my-36 flex flex-col items-center px-1 md:px-0">
+    <section id="company-overview" className="w-full my-36 flex flex-col items-center px-1 md:px-0">
       <p className="font-bold text-6xl mb-20 text-center">
         We aspire to be the most player-focused
         <br />
@@ -16,7 +16,7 @@ const CompOv: React.FC = () => {
         <br />
         But we're not just about games. From electrifying soundtracks to cutting-edge merchandise, we're expanding our universe to engage with our community on every level. At RageQuit Games, players fuel our passion and drive our innovation. Join us on this exhilarating adventure, where every rage quit is a step closer to victory.
       </p>
-    </div>
+    </section>
   );
 };
 

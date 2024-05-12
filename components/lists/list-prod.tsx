@@ -68,7 +68,7 @@ const ListProd: React.FC = () => {
   ];
 
   return (
-    <>
+    <section id="product-list">
       <div>
         {DATA.map((prod) => (
           <ProductList key={prod.section} section={prod.section} props={prod.props} />
@@ -76,7 +76,7 @@ const ListProd: React.FC = () => {
       </div>
       <CarouselForge />
       <CTAProd />
-    </>
+    </section>
   );
 };
 

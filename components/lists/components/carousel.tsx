@@ -37,7 +37,7 @@ const CarouselForge: React.FC = () => {
   ];
 
   return (
-    <div className="w-full Py-36 bg-bgblack overflow-auto">
+    <div id="scroll-forge" className="w-full Py-36 bg-bgblack overflow-auto">
       <div className="px-10 mt-24">
         <p className="text-white text-5xl font-semibold">Rage Forge</p>
         <div className="overflow-x-scroll flex md:gap-5 gap-3 no-scrollbar">

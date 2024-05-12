@@ -37,9 +37,9 @@ const Testimonials: React.FC = () => {
           <p className="font-poppins font-medium text-lg leading-tight max-w-sm text-gray-300 md:mx-3">From casual gamers to esports enthusiasts, our community shares their thoughts on our games and the impact they've had on their gaming journey.</p>
         </div>
       </div>
-      <div className="overflow-x-scroll flex md:gap-5 gap-3 no-scrollbar md:px-6">
+      <div className="overflow-hidden overflow-x-scroll flex md:gap-5 gap-3 no-scrollbar w-screen md:w-full">
         {feedback.map((card) => (
-          <div className="flex-shrink-0 x-6 py-12 w-5/6 md:w-1/3">
+          <div className="flex-shrink-0 x-6 py-12 w-5/6 md:w-1/3 md:ml-10">
             <TestiCard key={card.id} {...card} />
           </div>
         ))}

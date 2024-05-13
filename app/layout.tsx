@@ -5,6 +5,7 @@ import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 import NavBar from "@/components/navbar/navbar";
 import { Suspense } from "react";
 import { Skeleton } from "@mui/material";
+import Footer from "@/components/footer/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
           <AppRouterCacheProvider>
             <NavBar />
             {children}
+            <Footer />
           </AppRouterCacheProvider>
         </body>
       </Suspense>

@@ -6,7 +6,7 @@ import "@/app/globals.css";
 const CTAProd: React.FC = () => {
   return (
     <>
-      <div id="cta-prod" className="md:flex md:justify-between my-16 p-0 md:m-0 border-t-bgblack">
+      <div id="cta-prod" className="md:flex md:justify-between mt-16 p-0 md:m-0 border-t-bgblack">
         <div className="cta-content flex flex-col items-center justify-center mx-auto">
           <div className="container-inner max-w-[620px] mx-auto text-center py-8 px-4 pt-0 md:mx-auto md:px-30 md:py-8">
             <h2 className="text-4xl font-bold leading-none text-black mb-6 block isolate">Explore our forge!!</h2>

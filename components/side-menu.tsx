@@ -19,51 +19,83 @@ const SideMenu: React.FC = () => {
     setIsHovered(false);
   };
 
-  const lightLogo = <Image src={"/fist-light-32.png"} width={32} height={32} className="h-8" alt="RQG Logo" />;
-  const redLogo = <Image src={"/fist-red-32.png"} width={32} height={32} className="h-8" alt="RQG Logo" />;
+  const lightLogo = (
+    <Image
+      src={"/fist-light-32.png"}
+      width={32}
+      height={32}
+      className="h-8"
+      alt="RQG Logo"
+    />
+  );
+  const redLogo = (
+    <Image
+      src={"/fist-red-32.png"}
+      width={32}
+      height={32}
+      className="h-8"
+      alt="RQG Logo"
+    />
+  );
 
   const DATA = [
     {
+      id: "navlinks-1",
       name: "Who We Are",
-      path: "/aboutus"
+      path: "/aboutus",
     },
     {
+      id: "navlinks-2",
       name: "Products/Services",
-      path: "/products"
+      path: "/products",
     },
     {
+      id: "navlinks-3",
       name: "Our RageQuitters",
-      path: "/teams"
-    }
+      path: "/teams",
+    },
   ];
 
   return (
-    <div className="w-screen h-full bg-navblack flex flex-col md:hidden">
+    <div className="flex h-full w-screen flex-col bg-navblack md:hidden">
       <div className="p-7">
         {/* top */}
-        <div className="flex flex-row h-16">
-          <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-4 p-2" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <div className="flex h-16 flex-row">
+          <div
+            className="mx-4 flex max-w-screen-xl flex-wrap items-center justify-between p-2"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <Link
+              href="/"
+              className="flex items-center space-x-3 rtl:space-x-reverse"
+            >
               {isHovered ? redLogo : lightLogo}
-              <span className="self-center text-xl font-medium whitespace-nowrap dark:text-white uppercase">
-                <p className={isHovered ? "text-ragered" : "text-white"}>RageQuit</p>
-                <p className={isHovered ? "text-ragered" : "text-white"}>Games</p>
+              <span className="self-center whitespace-nowrap text-xl font-medium uppercase dark:text-white">
+                <p className={isHovered ? "text-ragered" : "text-white"}>
+                  RageQuit
+                </p>
+                <p className={isHovered ? "text-ragered" : "text-white"}>
+                  Games
+                </p>
               </span>
             </Link>
           </div>
-          <div className="block md:hidden my-auto p-3">{/* close btn here */}</div>
+          <div className="my-auto block p-3 md:hidden">
+            {/* close btn here */}
+          </div>
         </div>
         <div className="links">
-          <ul className="text-white flex flex-col gap-5 text-xl my-6">
+          <ul className="my-6 flex flex-col gap-5 text-xl text-white">
             {DATA.map((page) => (
-              <NavLinks key={page.name} name={page.name} path={page.path} />
+              <NavLinks key={page.id} {...page} />
             ))}
           </ul>
         </div>
         <div className="search-bar my-6">
           <SearchBar />
         </div>
-        <div className="flex justify-center align-middle items-center m-auto">
+        <div className="m-auto flex items-center justify-center align-middle">
           <SignInBtn />
         </div>
       </div>

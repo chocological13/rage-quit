@@ -7,7 +7,13 @@ interface NavLinksProps {
   path: string;
 }
 
-const NavLinks: React.FC<NavLinksProps> = ({ name, path }: { name: string; path: string }) => {
+const NavLinks: React.FC<NavLinksProps> = ({
+  name,
+  path,
+}: {
+  name: string;
+  path: string;
+}) => {
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
   const handleMouseEnter = () => {
@@ -19,7 +25,11 @@ const NavLinks: React.FC<NavLinksProps> = ({ name, path }: { name: string; path:
   };
 
   return (
-    <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className={`${isHovered ? "bg-ragered w-fit rounded-md" : ""} list-style-none uppercase p-2`}>
+    <li
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      className={`${isHovered ? "w-fit rounded-md bg-ragered" : ""} list-style-none p-2 uppercase`}
+    >
       <Link href={`${path}`}>{name}</Link>
     </li>
   );

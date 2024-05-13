@@ -10,65 +10,80 @@ const Footer: React.FC = () => {
     {
       id: 1,
       name: "Press",
-      path: "/"
+      path: "/",
     },
     {
       id: 2,
       name: "Security",
-      path: "/"
+      path: "/",
     },
     {
       id: 3,
       name: "Legal",
-      path: "/"
+      path: "/",
     },
     {
       id: 4,
       name: "Leadership",
-      path: "/"
+      path: "/",
     },
     {
       id: 5,
       name: "Candidate Privacy",
-      path: "/"
+      path: "/",
     },
     {
       id: 6,
       name: "Terms of Service",
-      path: "/"
+      path: "/",
     },
     {
       id: 7,
       name: "Privacy Notice",
-      path: "/"
+      path: "/",
     },
     {
       id: 8,
       name: "Player Support",
-      path: "/"
+      path: "/",
     },
     {
       id: 9,
       name: "E-Verify",
-      path: "/"
+      path: "/",
     },
     {
       id: 10,
       name: "Accessibility",
-      path: "/"
-    }
+      path: "/",
+    },
   ];
 
   id: return (
-    <footer className="z-10 bg-navblack text-white text-sm text-center py-10 px-4 pb-16 h-auto bottom-0">
+    <footer className="bottom-0 z-10 h-auto bg-navblack px-4 py-10 pb-16 text-center text-sm text-white">
       <div className="mx-auto md:max-w-7xl">
-        <div id="footer-row" className="max-w-7xl md:mx-6 md:flex md:justify-between md:items-center md:py-6 border-b border-gray-400">
-          <div id="footer-col" className="md:flex sm:md:flex-row justify-between w-full">
-            <div id="footer-col-inner" className="md:flex md:items-center md:justify-between w-full sm:md:flex-col md:flex-row">
-              <div id="footer-icon" className="flex justify-center md:inline-block w-full md:w-auto my-3">
+        <div
+          id="footer-row"
+          className="max-w-7xl border-b border-gray-400 md:mx-6 md:flex md:items-center md:justify-between md:py-6"
+        >
+          <div
+            id="footer-col"
+            className="w-full justify-between sm:md:flex-row md:flex"
+          >
+            <div
+              id="footer-col-inner"
+              className="w-full sm:md:flex-col md:flex md:flex-row md:items-center md:justify-between"
+            >
+              <div
+                id="footer-icon"
+                className="my-3 flex w-full justify-center md:inline-block md:w-auto"
+              >
                 <NavIcon show={false} btn={false} />
               </div>
-              <ul id="footer-links" className="flex flex-col sm:md:flex-row list-none text-xs md:text-left sm:md:flex-wrap sm:md:text-nowrap gap-1 tracking-tighter font-bold">
+              <ul
+                id="footer-links"
+                className="flex list-none flex-col gap-1 text-xs font-bold tracking-tighter sm:md:text-nowrap sm:md:flex-wrap sm:md:flex-row md:text-left"
+              >
                 {DATA.map((d) => (
                   <NavLinks key={d.id} {...d} />
                 ))}
@@ -79,10 +94,18 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-        <div id="footer-row-2" className="max-w-7xl md:mx-6 flex md:flex-row flex-col gap-3 md:items-center my-6 justify-between">
-          <div id="footer-row-text" className="flex sm:md:flex-row flex-col gap-3 md:gap-0 border-b border-gray-400 md:border-0">
+        <div
+          id="footer-row-2"
+          className="my-6 flex max-w-7xl flex-col justify-between gap-3 md:mx-6 md:flex-row md:items-center"
+        >
+          <div
+            id="footer-row-text"
+            className="flex flex-col gap-3 border-b border-gray-400 sm:md:flex-row md:gap-0 md:border-0"
+          >
             <p className="md:border-r md:pr-3">Cookie Preferences</p>
-            <small className="md:pl-3 mb-7 md:mb-0">© 2024 RageQuit Games, Inc. All Rights Reserved.</small>
+            <small className="mb-7 md:mb-0 md:pl-3">
+              © 2024 RageQuit Games, Inc. All Rights Reserved.
+            </small>
           </div>
           <Link href="#top">
             <p className="tracking-tighter">

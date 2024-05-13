@@ -7,28 +7,37 @@ import SignInBtn from "./ui/signin-btn";
 const NavBar: React.FC = () => {
   const DATA = [
     {
+      id: "nav-1",
       name: "Who We Are",
-      path: "/aboutus"
+      path: "/aboutus",
     },
     {
+      id: "nav-2",
       name: "Games & Experiences",
-      path: "/products"
+      path: "/products",
     },
     {
+      id: "nav-3",
       name: "Our RageQuitters",
-      path: "/teams"
-    }
+      path: "/teams",
+    },
   ];
 
   return (
-    <nav id="top" className="bg-navblack w-full h-navheight text-white fixed z-20 top-0 start-0 grid grid-cols-[1fr_5fr_1fr_1fr] md:gap-3">
-      <div className="flex justify-between md:justify-normal w-screen md:w-full">
+    <nav
+      id="top"
+      className="fixed start-0 top-0 z-20 grid h-navheight w-full grid-cols-[1fr_5fr_1fr_1fr] bg-navblack text-white md:gap-3"
+    >
+      <div className="flex w-screen justify-between md:w-full md:justify-normal">
         <NavIcon show btn />
       </div>
-      <div className="items-center my-auto hidden w-full md:block md:mx-auto" id="navbar-search">
-        <ul className="flex flex-row text-left justify-start align-middle gap-5 my-4">
+      <div
+        className="my-auto hidden w-full items-center md:mx-auto md:block"
+        id="navbar-search"
+      >
+        <ul className="my-4 flex flex-row justify-start gap-5 text-left align-middle">
           {DATA.map((page) => (
-            <NavLinks key={page.name} {...page} />
+            <NavLinks key={page.id} {...page} />
           ))}
         </ul>
       </div>
@@ -37,7 +46,7 @@ const NavBar: React.FC = () => {
           <SearchBar />
         </div>
       </div>
-      <div className="relative flex items-center align-middle justify-center mt-2 w-3/4">
+      <div className="relative mt-2 flex w-3/4 items-center justify-center align-middle">
         <SignInBtn />
       </div>
     </nav>

@@ -4,7 +4,12 @@ import Image from "next/image";
 import { useState } from "react";
 import MenuBtn from "./menu-btn";
 
-const NavIcon: React.FC = () => {
+interface NavIconProp {
+  show: boolean;
+  btn: boolean;
+}
+
+const NavIcon: React.FC<NavIconProp> = ({ show, btn }: { show: boolean; btn: boolean }) => {
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
   const handleMouseEnter = () => {
@@ -19,20 +24,26 @@ const NavIcon: React.FC = () => {
   const redLogo = <Image src={"/fist-red-32.png"} width={32} height={32} className="h-8" alt="RQG Logo" />;
 
   return (
-    <div className="flex justify-between md:justify-normal w-screen md:w-full">
+    <>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-4 p-2" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           {isHovered ? redLogo : lightLogo}
-          <span className="self-center text-xl font-medium whitespace-nowrap dark:text-white uppercase">
-            <p className={isHovered ? "text-ragered" : "text-white"}>RageQuit</p>
-            <p className={isHovered ? "text-ragered" : "text-white"}>Games</p>
-          </span>
+          {show && (
+            <>
+              <span className="self-center text-xl font-medium whitespace-nowrap dark:text-white uppercase">
+                <p className={isHovered ? "text-ragered" : "text-white"}>RageQuit</p>
+                <p className={isHovered ? "text-ragered" : "text-white"}>Games</p>
+              </span>
+            </>
+          )}
         </Link>
       </div>
-      <div className="block md:hidden my-auto p-3">
-        <MenuBtn />
-      </div>
-    </div>
+      {btn && (
+        <div className="block md:hidden my-auto p-3">
+          <MenuBtn />
+        </div>
+      )}
+    </>
   );
 };
 

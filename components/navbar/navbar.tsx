@@ -22,11 +22,13 @@ const NavBar: React.FC = () => {
 
   return (
     <nav className="bg-navblack w-full h-navheight text-white fixed z-20 top-0 start-0 grid grid-cols-[1fr_5fr_1fr_1fr] md:gap-3">
-      <NavIcon />
+      <div className="flex justify-between md:justify-normal w-screen md:w-full">
+        <NavIcon show btn />
+      </div>
       <div className="items-center my-auto hidden w-full md:block md:mx-auto" id="navbar-search">
         <ul className="flex flex-row text-left justify-start align-middle gap-5 my-4">
           {DATA.map((page) => (
-            <NavLinks key={page.name} name={page.name} path={page.path} />
+            <NavLinks key={page.name} {...page} />
           ))}
         </ul>
       </div>

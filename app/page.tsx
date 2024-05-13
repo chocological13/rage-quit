@@ -5,7 +5,7 @@ import Testimonials from "@/components/testimonials/testimonials";
 
 export default function Home() {
   return (
-    <main className="bg-ragewhite w-full selection:text-white selection:bg-ragered">
+    <main className="bg-ragewhite w-full">
       <Hero />
       <CompOv />
       <ListProd />

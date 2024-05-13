@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Suspense fallback={<Skeleton />}>
-        <body className={inter.className}>
+        <body className={`${inter.className} selection:bg-ragered selection:text-white`}>
           <AppRouterCacheProvider>
             <NavBar />
             {children}

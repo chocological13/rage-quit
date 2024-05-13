@@ -9,7 +9,7 @@ const SocialsList: React.FC = () => {
   const icons = [<FacebookIcon />, <XIcon />, <LinkedInIcon />, <YouTubeIcon />];
 
   return (
-    <ul id="socials-list" className="flex flex-row">
+    <ul id="socials-list" className="flex flex-row gap-3">
       {icons.map((icon) => (
         <Socials icon={icon} />
       ))}

@@ -31,6 +31,11 @@
   scroll-behavior: smooth;
 }
 
+/* *::selection {
+  background-color: #d8343c;
+  text-color: white;
+} */
+
 .cta-img {
   @media screen and (min-width: 960px) {
     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);

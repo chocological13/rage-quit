@@ -11,18 +11,20 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "RageQuit Games",
-  description: "Embrace the Rage, Chase the Win!"
+  description: "Embrace the Rage, Chase the Win!",
 };
 
 export default function RootLayout({
-  children
+  children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
       <Suspense fallback={<Skeleton />}>
-        <body className={`${inter.className} selection:bg-ragered selection:text-white`}>
+        <body
+          className={`${inter.className} selection:bg-ragered selection:text-white`}
+        >
           <AppRouterCacheProvider>
             <NavBar />
             {children}

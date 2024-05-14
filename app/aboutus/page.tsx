@@ -1,8 +1,19 @@
+import Banner from "@/components/banner";
 import React from "react";
-import SideMenu from "../../components/side-menu";
+import AboutText from "./components/about-text";
 
 const AboutUs: React.FC = () => {
-  return <div>{/* <SideMenu /> */}</div>;
+  return (
+    <div>
+      <Banner
+        img="/about-banner.webp"
+        width={1920}
+        height={1280}
+        alt="about-banner"
+      />
+      <AboutText />
+    </div>
+  );
 };
 
 export default AboutUs;

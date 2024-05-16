@@ -20,8 +20,14 @@ const Banner: React.FC<BannerProps> = ({
   alt: string;
 }) => {
   return (
-    <div className="h-full bg-pink-50 text-white">
-      <Image src={img} width={width} height={height} alt={alt} />
+    <div className="h-full w-full overflow-hidden object-contain">
+      <Image
+        src={img}
+        width={width}
+        height={height}
+        alt={alt}
+        className="sm:object-position-center object-cover object-center sm:object-contain"
+      />
     </div>
   );
 };

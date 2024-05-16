@@ -41,3 +41,23 @@
     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
   }
 }
+
+#history-title {
+  background-image: url("/title-sketch-ahri.webp");
+}
+
+/* for history */
+.animated {
+  animation: fadeInUp 0.5s ease-in-out; /* Replace with your desired animation */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

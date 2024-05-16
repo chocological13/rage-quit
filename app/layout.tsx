@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import "animate.css";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 import NavBar from "@/components/navbar/navbar";
 import { Suspense } from "react";

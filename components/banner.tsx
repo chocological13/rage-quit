@@ -20,7 +20,7 @@ const Banner: React.FC<BannerProps> = ({
   alt: string;
 }) => {
   return (
-    <div className="h-full w-full overflow-hidden object-contain">
+    <div className="h-full w-full overflow-hidden object-fill">
       <Image
         src={img}
         width={width}

@@ -4,35 +4,41 @@ const AboutText = () => {
   return (
     <section
       id="about-text"
-      className="bg-divblack flex w-full flex-col items-center px-1 py-14 text-white md:flex-row md:px-10 md:py-36"
+      className="flex w-full flex-col items-center bg-divblack px-1 py-14 text-white md:flex-row md:px-10 md:py-36"
     >
       <p className="mb-20 flex-shrink text-wrap text-center text-4xl font-bold md:my-auto md:w-1/4 md:text-6xl">
         Our
-        <span className="font-semibold text-ragered"> story.</span>
+        <span className="font-semibold text-ragered"> Story.</span>
       </p>
-      <p className="w:px-0 w-full text-wrap px-2 text-justify md:w-3/4">
-        {/* RageQuit Games was founded in 199X, driven by a shared vision to create
-        games that challenge, inspire, and entertain players around the world.
-        Our debut title,{" "}
-        <span className="font-semibold text-ragered">Realm of Rivals</span>,
-        launched in 200X, quickly becoming a global sensation.
-        <br />
-        Building on that success, we expanded our portfolio with acclaimed
-        titles like{" "}
-        <span className="font-semibold text-ragered">
-          Tactics Triumph, Rift Legends, Valorant Vanguard, and Runeterra
-          Rivals.
-        </span>{" "}
-        Throughout the years, we've continued to innovate and push the
-        boundaries of what's possible in gaming. Our dedication to excellence
-        has been recognized through numerous awards and the unwavering loyalty
-        of our growing community.
-       */}
+      <p className="w:px-0 w-full text-wrap px-2 text-justify leading-6 md:w-3/4">
         Welcome to{" "}
         <span className="font-semibold text-ragered">RageQuit Games</span>,
         where passion and innovation collide to create unforgettable gaming
-        experiences. Our journey began with a dream to redefine the gaming
-        landscape, and we've been dedicated to that mission ever since.
+        experiences. <span className="font-semibold">Founded in 2005</span>, our
+        journey began with a dream to redefine the gaming landscape. Our debut
+        title,{" "}
+        <span className="font-semibold text-ragered">Realm of Rivals</span>,
+        launched in 2007 and quickly became a global sensation.
+        <br />
+        <br />
+        In <span className="font-semibold">2010</span>, we expanded our
+        portfolio with{" "}
+        <span className="font-semibold text-ragered">Rift Rumble</span>,
+        captivating gamers worldwide. By{" "}
+        <span className="font-semibold">2013</span>, we ventured into esports
+        with{" "}
+        <span className="font-semibold text-ragered">Tactical Triumph</span>,
+        leading to our first major tournament, the{" "}
+        <span className="font-semibold text-ragered">
+          Tactical Triumph Tournament
+        </span>
+        . Our success continued with the{" "}
+        <span className="font-semibold">2015</span> release of{" "}
+        <span className="font-semibold text-ragered">
+          Legend of Runeterra Showdown
+        </span>
+        , solidifying our reputation for innovative and immersive gaming
+        experiences.
         <br />
         <br />
         At the core of our success is a diverse team of talented individuals

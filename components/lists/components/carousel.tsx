@@ -1,6 +1,15 @@
 "use client";
-import React from "react";
-import Card, { CardProps } from "./card";
+import React, { useRef, useState } from "react";
+import Card from "./card";
+import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const CarouselForge: React.FC = () => {
   const DATA = [
@@ -43,20 +52,26 @@ const CarouselForge: React.FC = () => {
   ];
 
   return (
-    <div id="scroll-forge" className="Py-36 w-full overflow-auto bg-bgblack">
-      <div className="mt-24 px-10">
+    <div id="scroll-forge" className="w-full bg-bgblack py-20">
+      <div className="mt-10 px-10">
         <p className="text-5xl font-semibold text-white">Rage Forge</p>
-        <div className="no-scrollbar flex gap-3 overflow-x-scroll md:gap-5">
-          {DATA.map((data) => (
-            <div className="x-6 w-5/6 flex-shrink-0 py-12 md:w-1/3">
-              <Card
-                key={data.id}
-                img={data.img}
-                alt={data.alt}
-                title={data.title}
-              />
-            </div>
-          ))}
+        <div className="flex gap-3 md:gap-5">
+          <Carousel className="mx-5">
+            <CarouselContent>
+              {DATA.map((data) => (
+                <CarouselItem className="x-6 w-5/6 flex-shrink-0 py-12 md:w-1/3 md:basis-1/3">
+                  <Card
+                    key={data.id}
+                    img={data.img}
+                    alt={data.alt}
+                    title={data.title}
+                  />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </div>
     </div>

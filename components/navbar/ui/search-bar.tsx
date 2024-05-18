@@ -7,7 +7,7 @@ const SearchBar: React.FC = () => {
       <input
         type="text"
         id="search-navbar"
-        className="block w-full rounded-3xl bg-transparent p-2 ps-[1.5rem] text-sm text-gray-900 focus:outline-none dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
+        className="block w-full rounded-3xl bg-navsearch p-2 ps-[1.5rem] text-sm text-gray-400 focus:outline-none dark:bg-gray-700 dark:placeholder-gray-400"
         placeholder="SEARCH"
       />
       <div className="pointer-events-none absolute inset-y-0 start-0 flex items-center ps-[9.75rem]">

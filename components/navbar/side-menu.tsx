@@ -66,7 +66,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ toggleDrawer }: SideMenuProps) => {
     <div className="flex h-full w-screen flex-col bg-navblack md:hidden">
       <div className="p-7">
         {/* top */}
-        <div className="flex h-16 flex-row">
+        <div className="flex h-16 flex-row justify-between">
           <div
             className="mx-4 flex max-w-screen-xl flex-wrap items-center justify-between p-2"
             onMouseEnter={handleMouseEnter}
@@ -92,7 +92,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ toggleDrawer }: SideMenuProps) => {
             onClick={toggleDrawer}
             className="my-auto block p-3 md:hidden"
           >
-            <CloseIcon />
+            <CloseIcon className="text-white" />
           </button>
         </div>
         <div className="links">

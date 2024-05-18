@@ -46,7 +46,7 @@ const NavBar: React.FC = () => {
           <SearchBar />
         </div>
       </div>
-      <div className="relative mt-2 flex w-3/4 items-center justify-center align-middle">
+      <div className="relative mt-2 hidden w-3/4 items-center justify-center align-middle md:top-4 md:block">
         <SignInBtn />
       </div>
     </nav>

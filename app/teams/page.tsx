@@ -1,7 +1,12 @@
 import React from "react";
+import TeamHero from "./components/team-hero";
 
 const Teams: React.FC = () => {
-  return <div>Teams</div>;
+  return (
+    <>
+      <TeamHero />
+    </>
+  );
 };
 
 export default Teams;

@@ -3,13 +3,7 @@ import React from "react";
 const MenuBtn: React.FC = () => {
   return (
     <>
-      <button
-        data-collapse-toggle="navbar-default"
-        type="button"
-        className="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-        aria-controls="navbar-default"
-        aria-expanded="false"
-      >
+      <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden">
         <svg
           className="h-5 w-5"
           aria-hidden="true"
@@ -25,7 +19,7 @@ const MenuBtn: React.FC = () => {
             d="M1 1h15M1 7h15M1 13h15"
           />
         </svg>
-      </button>
+      </div>
     </>
   );
 };

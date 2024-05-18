@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import MenuBtn from "./menu-btn";
+import SideBtn from "./side-btn";
 
 interface NavIconProp {
   show: boolean;
@@ -71,11 +71,7 @@ const NavIcon: React.FC<NavIconProp> = ({
           )}
         </Link>
       </div>
-      {btn && (
-        <div className="my-auto block p-3 md:hidden">
-          <MenuBtn />
-        </div>
-      )}
+      {btn && <SideBtn />}
     </>
   );
 };

@@ -7,8 +7,14 @@ import SignInBtn from "@/components/navbar/ui/signin-btn";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import CloseIcon from "@mui/icons-material/Close";
+import { MouseEventHandler } from "react";
 
-const SideMenu: React.FC = () => {
+interface SideMenuProps {
+  toggleDrawer: MouseEventHandler<HTMLButtonElement>;
+}
+
+const SideMenu: React.FC<SideMenuProps> = ({ toggleDrawer }: SideMenuProps) => {
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
   const handleMouseEnter = () => {
@@ -81,9 +87,13 @@ const SideMenu: React.FC = () => {
               </span>
             </Link>
           </div>
-          <div className="my-auto block p-3 md:hidden">
-            {/* close btn here */}
-          </div>
+          <button
+            type="button"
+            onClick={toggleDrawer}
+            className="my-auto block p-3 md:hidden"
+          >
+            <CloseIcon />
+          </button>
         </div>
         <div className="links">
           <ul className="my-6 flex flex-col gap-5 text-xl text-white">

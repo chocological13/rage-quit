@@ -59,7 +59,7 @@ const NavIcon: React.FC<NavIconProp> = ({
           {isHovered ? redLogo : lightLogo}
           {show && (
             <>
-              <span className="self-center whitespace-nowrap text-xl font-medium uppercase dark:text-white">
+              <span className="whitespace-nowrap text-left text-xl font-medium uppercase dark:text-white md:self-center">
                 <p className={isHovered ? "text-ragered" : "text-white"}>
                   RageQuit
                 </p>

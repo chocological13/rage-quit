@@ -4,14 +4,14 @@ import React from "react";
 const TeamHero: React.FC = () => {
   return (
     <section className="teams-hero relative">
-      <div className="hero__bg bottom-0 left-0 right-0 top-0 overflow-hidden bg-[url('/banner/hero-dark-sketch.webp')] bg-cover bg-repeat">
-        <div className="hero__inner mx-auto my-20 mb-10 max-w-7xl bg-transparent pt-20">
-          <div className="grid--gutterless flex flex-row-reverse justify-between gap-14">
-            <div className="grid__item">
+      <div className="hero__bg bottom-0 left-0 right-0 top-0 overflow-hidden bg-[url('/banner/hero-dark-sketch.webp')] bg-cover bg-center bg-repeat">
+        <div className="hero__inner mx-3 my-10 bg-transparent pt-20 md:mx-auto md:my-20 md:mb-10 md:max-w-7xl">
+          <div className="grid--gutterless flex flex-col justify-between md:flex-row-reverse md:gap-14">
+            <div className="grid__item mb-10">
               <div className="w-fit bg-ragered px-2 text-center uppercase text-white">
                 <span>Teams</span>
               </div>
-              <h1 className="hero__heading text-[80px] font-bold text-white">
+              <h1 className="hero__heading mt-3 text-[54px] font-bold text-white md:text-[80px]">
                 Our <span className="text-ragered">RageQuitters</span>
               </h1>
             </div>
@@ -21,6 +21,7 @@ const TeamHero: React.FC = () => {
               width="640"
               height="360"
               src={"/banner/statue.webp"}
+              className="hidden md:block"
             />
           </div>
         </div>

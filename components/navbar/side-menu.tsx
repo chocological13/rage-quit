@@ -1,49 +1,16 @@
-"use client";
-
 import React from "react";
 import NavLinks from "@/components/navbar/ui/nav-links";
 import SearchBar from "@/components/navbar/ui/search-bar";
 import SignInBtn from "@/components/navbar/ui/signin-btn";
-import { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
 import CloseIcon from "@mui/icons-material/Close";
 import { MouseEventHandler } from "react";
+import NavIcon from "./ui/nav-icon";
 
 interface SideMenuProps {
   toggleDrawer: MouseEventHandler<HTMLButtonElement>;
 }
 
 const SideMenu: React.FC<SideMenuProps> = ({ toggleDrawer }: SideMenuProps) => {
-  const [isHovered, setIsHovered] = useState<boolean>(false);
-
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
-
-  const lightLogo = (
-    <Image
-      src={"/fist-light-32.png"}
-      width={32}
-      height={32}
-      className="h-8"
-      alt="RQG Logo"
-    />
-  );
-  const redLogo = (
-    <Image
-      src={"/fist-red-32.png"}
-      width={32}
-      height={32}
-      className="h-8"
-      alt="RQG Logo"
-    />
-  );
-
   const DATA = [
     {
       id: "navlinks-1",
@@ -66,27 +33,12 @@ const SideMenu: React.FC<SideMenuProps> = ({ toggleDrawer }: SideMenuProps) => {
     <div className="flex h-full w-screen flex-col bg-navblack md:hidden">
       <div className="p-7">
         {/* top */}
-        <div className="flex h-16 flex-row justify-between">
-          <div
-            className="mx-4 flex max-w-screen-xl flex-wrap items-center justify-between p-2"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            <Link
-              href="/"
-              className="flex items-center space-x-3 rtl:space-x-reverse"
-            >
-              {isHovered ? redLogo : lightLogo}
-              <span className="self-center whitespace-nowrap text-xl font-medium uppercase dark:text-white">
-                <p className={isHovered ? "text-ragered" : "text-white"}>
-                  RageQuit
-                </p>
-                <p className={isHovered ? "text-ragered" : "text-white"}>
-                  Games
-                </p>
-              </span>
-            </Link>
-          </div>
+        <button
+          className="flex h-16 w-full flex-row justify-between"
+          onClick={toggleDrawer}
+          type="button"
+        >
+          <NavIcon show btn={false} />
           <button
             type="button"
             onClick={toggleDrawer}
@@ -94,12 +46,18 @@ const SideMenu: React.FC<SideMenuProps> = ({ toggleDrawer }: SideMenuProps) => {
           >
             <CloseIcon className="text-white" />
           </button>
-        </div>
+        </button>
         <div className="links">
-          <ul className="my-6 flex flex-col gap-5 text-xl text-white">
-            {DATA.map((page) => (
-              <NavLinks key={page.id} {...page} />
-            ))}
+          <ul>
+            <button
+              type="button"
+              onClick={toggleDrawer}
+              className="my-14 flex flex-col gap-5 text-xl text-white"
+            >
+              {DATA.map((page) => (
+                <NavLinks key={page.id} {...page} />
+              ))}
+            </button>
           </ul>
         </div>
         <div className="search-bar my-6">

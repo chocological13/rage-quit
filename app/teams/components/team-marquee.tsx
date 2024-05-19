@@ -51,12 +51,8 @@ const TeamMarquee: React.FC = () => {
     "/champ/naut.png",
   ];
 
-  //   const sliceOne = imageList.slice(0, 14);
-  //   const sliceTwo = imageList.slice(15, 29);
-  //   const sliceThree = imageList.slice(30, 44);
-
   return (
-    <div className="marquee-holder flex flex-col gap-3">
+    <div className="marquee-holder flex max-w-full flex-col gap-3">
       <div className="marquee-1 flex flex-row gap-2">
         {imageList.map((image, index) => (
           <Image

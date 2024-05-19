@@ -66,7 +66,7 @@ const TeamMarquee: React.FC = () => {
           />
         ))}
       </div>
-      <div className="marquee-2 flex flex-row gap-2">
+      <div className="marquee-2 hidden gap-2 md:flex md:flex-row">
         {imageList.map((image, index) => (
           <Image
             key={index}
@@ -79,7 +79,7 @@ const TeamMarquee: React.FC = () => {
           />
         ))}
       </div>
-      <div className="marquee-3 flex flex-row gap-2">
+      <div className="marquee-3 hidden gap-2 md:flex md:flex-row">
         {imageList.map((image, index) => (
           <Image
             key={index}

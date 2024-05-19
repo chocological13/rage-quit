@@ -47,7 +47,7 @@ const TeamCard: React.FC<TeamCardProps> = ({
   };
 
   return (
-    <Card sx={{ maxWidth: 200 }}>
+    <Card sx={{ maxWidth: 275 }} className="flex flex-col">
       <CardMedia component="img" height="100" image={img} alt={name} />
       <div className="w-full bg-bgblack p-2 text-white">
         <div className="team-name my-2 text-2xl font-semibold">{name}</div>

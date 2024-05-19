@@ -1,8 +1,6 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React from "react";
 import Card from "./card";
-import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
-import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import {
   Carousel,
   CarouselContent,

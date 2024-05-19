@@ -9,15 +9,15 @@ const Teams: React.FC = () => {
   return (
     <div className="max-w-full bg-ragewhite">
       <TeamHero />
-      <div className="team-text-cont mx-auto flex w-9/12 py-20 md:py-32">
+      <section className="team-text-cont mx-auto flex w-9/12 py-20 md:py-32">
         <TeamText />
-      </div>
-      <div className="pb-20">
+      </section>
+      <section className="marquee pb-20">
         <TeamMarquee />
-      </div>
-      <div className="">
+      </section>
+      <section className="teams pb-20 md:w-full">
         <TeamDisplay />
-      </div>
+      </section>
     </div>
   );
 };

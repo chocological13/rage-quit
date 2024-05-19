@@ -20,7 +20,7 @@ const TeamsCard: React.FC<TeamsCardProps> = ({
   comment: string;
 }) => {
   return (
-    <li className=" team-member hover:transform-y-2 group grid w-fit flex-shrink-0 items-center justify-center overflow-hidden rounded-lg bg-buff shadow-md transition-transform duration-300 ease-in-out hover:shadow-lg md:flex md:flex-shrink md:flex-col">
+    <li className=" team-member hover:transform-y-2 group grid w-fit flex-shrink-0 items-center justify-center overflow-hidden rounded-lg bg-black shadow-md transition-transform duration-300 ease-in-out hover:shadow-lg md:flex md:flex-shrink md:flex-col">
       <div className="team-member-image relative">
         <Image
           src={src}
@@ -31,13 +31,13 @@ const TeamsCard: React.FC<TeamsCardProps> = ({
           className="h-auto w-full"
         />
         <div className="absolute inset-0 bg-gray-900 opacity-20 hover:opacity-75"></div>
-        <div className="absolute bottom-0 mx-auto w-full bg-black bg-opacity-20 px-4 pb-4 pt-2 text-center text-buff bg-blend-darken">
+        <div className="absolute bottom-0 mx-auto w-full bg-black bg-opacity-20 px-4 pb-4 pt-2 text-center text-wwhite bg-blend-darken">
           <h3 className="text-xl font-bold">{name}</h3>
-          <p className="text-base">{role}</p>
+          <small className="tracking-wider">{role}</small>
         </div>
       </div>
       <div className="team-content py-4 group-hover:opacity-100">
-        <p className="mx-auto max-w-[248px] text-wrap px-2 leading-loose text-wine">
+        <p className="mx-auto max-w-[248px] text-wrap px-2 text-center leading-loose text-ragewhite">
           {comment}
         </p>
       </div>

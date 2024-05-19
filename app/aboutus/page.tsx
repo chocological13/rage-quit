@@ -6,7 +6,7 @@ import Culture from "./components/culture";
 
 const AboutUs: React.FC = () => {
   return (
-    <div className="w-full">
+    <div className="w-full bg-ragewhite">
       <div className="banner inset-0 mt-navheight box-border overflow-hidden bg-cover bg-center object-fill">
         <Banner
           img="/banner/about-banner.webp"

@@ -1,7 +1,13 @@
+"use client";
+
 import React from "react";
 import ProdDetailsLayout from "./prod-details-layout";
+import { useMediaQuery } from "@mui/material";
+import ProductDetailsMobile from "./prod-details-mobile";
 
 const GamesDetails: React.FC = () => {
+  const isMedium = useMediaQuery("(min-width: 768px)");
+
   const DATA = [
     {
       text: {
@@ -70,16 +76,31 @@ const GamesDetails: React.FC = () => {
     },
   ];
   return (
-    <div className="mx-auto w-[95%] px-2 py-20">
-      <div className="title mb-10 text-center text-5xl font-semibold text-ragewhite">
-        <p>
-          Our <span className="text-ragered">Games.</span>
-        </p>
-      </div>
-      {DATA.map((game, index) => (
-        <ProdDetailsLayout key={index} {...game} />
-      ))}
-    </div>
+    <>
+      {isMedium ? (
+        <div className="mx-auto w-[95%] px-2 py-20">
+          <div className="title mb-10 text-center text-5xl font-semibold text-ragewhite">
+            <p>
+              Our <span className="text-ragered">Games.</span>
+            </p>
+          </div>
+          {DATA.map((game, index) => (
+            <ProdDetailsLayout key={index} {...game} />
+          ))}
+        </div>
+      ) : (
+        <div className="mx-auto w-[95%] px-2 py-20">
+          <div className="title mb-20 text-center text-5xl font-semibold text-ragewhite">
+            <p>
+              Our <span className="text-ragered">Games.</span>
+            </p>
+          </div>
+          {DATA.map((game, index) => (
+            <ProductDetailsMobile key={index} {...game} />
+          ))}
+        </div>
+      )}
+    </>
   );
 };
 

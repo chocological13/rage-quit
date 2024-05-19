@@ -1,6 +1,7 @@
 import React from "react";
 import ProdBanner from "./components/prod-banner";
 import GamesDetails from "./components/games-details";
+import EsportsDetails from "./components/esports-details";
 
 const Products: React.FC = () => {
   return (
@@ -10,6 +11,9 @@ const Products: React.FC = () => {
       </section>
       <section className="games bg-bgblack">
         <GamesDetails />
+      </section>
+      <section className="esports-details bg-ragewhite">
+        <EsportsDetails />
       </section>
     </div>
   );

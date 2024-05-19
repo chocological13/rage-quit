@@ -26,6 +26,7 @@ const Banner: React.FC<BannerProps> = ({
         width={width}
         height={height}
         alt={alt}
+        sizes="100vw"
         className="sm:object-position-center object-cover object-center sm:object-contain"
       />
     </div>

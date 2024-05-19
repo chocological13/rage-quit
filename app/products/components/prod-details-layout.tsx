@@ -2,7 +2,7 @@ import React from "react";
 import ProdDetailsText, { ProdDetailsTextProps } from "./prod-details-text";
 import Card, { CardProps } from "@/components/lists/components/card";
 
-interface ProdDetailsLayoutProps {
+export interface ProdDetailsLayoutProps {
   text: ProdDetailsTextProps;
   card: CardProps;
   index: number;

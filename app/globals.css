@@ -42,6 +42,57 @@
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 30px));
 }
 
+.marquee-holder {
+  position: relative;
+  width: 100vw;
+  background-color: $boxify-bg-light-dark;
+  overflow: hidden;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.marquee-1,
+.marquee-3 {
+  height: 100%;
+  white-space: nowrap;
+  animation: scrollText 15s infinite linear;
+  margin: 0;
+  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+}
+
+.marquee-2 {
+  height: 100%;
+  white-space: nowrap;
+  animation: scrollTextRev 15s infinite linear;
+  margin: 0;
+  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scrollTextRev {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

@@ -18,8 +18,7 @@ const SideBtn: React.FC = () => {
       ) {
         return;
       }
-
-      setState(open);
+      setTimeout(() => setState(open), 200);
     };
 
   return (

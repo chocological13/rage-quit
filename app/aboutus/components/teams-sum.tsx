@@ -59,6 +59,7 @@ const TeamSum: React.FC = () => {
           <button
             type="button"
             className="btn btn-primary flex flex-row items-center justify-between gap-1 rounded-xl bg-divblack px-6 py-3 text-center align-middle font-semibold text-white hover:bg-ragered focus:outline-none"
+            aria-label="teams page"
           >
             <p className="text-2xl">Meet the rest of our team!</p>
             <DoubleArrowIcon className="" fontSize="large" />

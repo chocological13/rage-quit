@@ -37,12 +37,14 @@ const SideMenu: React.FC<SideMenuProps> = ({ toggleDrawer }: SideMenuProps) => {
           className="flex h-16 w-full flex-row justify-between"
           onClick={toggleDrawer}
           type="button"
+          aria-label="nav-button"
         >
           <NavIcon show btn={false} />
           <button
             type="button"
             onClick={toggleDrawer}
             className="my-auto block p-3 md:hidden"
+            aria-label="close-nav-button"
           >
             <CloseIcon className="text-white" />
           </button>
@@ -53,6 +55,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ toggleDrawer }: SideMenuProps) => {
               type="button"
               onClick={toggleDrawer}
               className="my-14 flex flex-col gap-5 text-xl text-white"
+              aria-label="links-button"
             >
               {DATA.map((page) => (
                 <NavLinks key={page.id} {...page} />

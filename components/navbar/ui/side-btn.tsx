@@ -23,7 +23,7 @@ const SideBtn: React.FC = () => {
 
   return (
     <>
-      <Button onClick={toggleDrawer(true)}>
+      <Button onClick={toggleDrawer(true)} aria-label="menu-button">
         <div className="my-auto block p-3 md:hidden">
           <MenuBtn />
         </div>

@@ -33,6 +33,7 @@ const ProdDetailsText: React.FC<ProdDetailsTextProps> = ({
           <button
             type="button"
             className="rounded-xl bg-ragewhite p-2 px-3 font-semibold text-bgblack underline underline-offset-8 hover:bg-ragered hover:text-ragewhite"
+            aria-label="play link"
           >
             Play Now!
           </button>

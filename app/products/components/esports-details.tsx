@@ -37,6 +37,7 @@ const EsportsDetails = () => {
                 <button
                   type="button"
                   className="rounded-md bg-bgblack p-2 px-2 font-semibold text-ragewhite underline underline-offset-8 hover:bg-ragered hover:text-ragewhite"
+                  aria-label="watch link"
                 >
                   Watch Now!
                 </button>

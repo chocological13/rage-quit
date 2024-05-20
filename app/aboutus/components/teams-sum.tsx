@@ -44,7 +44,7 @@ const TeamSum: React.FC = () => {
 
   return (
     <section className="team-container bg-titlegray px-4 py-16 md:py-24">
-      <h2 className="mb-9 text-center text-3xl font-bold md:mb-20">
+      <h2 className="mb-9 text-center text-6xl font-bold tracking-wider md:mb-20">
         Our <span className="text-ragered">RageQuitters.</span>
       </h2>
 
@@ -58,9 +58,9 @@ const TeamSum: React.FC = () => {
         <Link href={"/teams"}>
           <button
             type="button"
-            className="btn btn-primary flex flex-row items-center justify-between gap-1 rounded-lg bg-divblack px-6 py-3 text-center align-middle font-semibold text-white hover:bg-ragered focus:outline-none"
+            className="btn btn-primary flex flex-row items-center justify-between gap-1 rounded-xl bg-divblack px-6 py-3 text-center align-middle font-semibold text-white hover:bg-ragered focus:outline-none"
           >
-            <p className="text-lg">Meet the rest of our team!</p>
+            <p className="text-2xl">Meet the rest of our team!</p>
             <DoubleArrowIcon className="" fontSize="large" />
           </button>
         </Link>

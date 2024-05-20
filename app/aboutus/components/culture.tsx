@@ -30,7 +30,7 @@ const Culture: React.FC = () => {
 
   return (
     <section className="culture justify-center bg-[url('/banner/culture-glhf.webp')] text-white">
-      <div className="title-cont relative flex flex-row justify-center overflow-hidden bg-[url('/banner/title-sketch-texture.webp')] py-20 text-4xl font-semibold bg-blend-multiply">
+      <div className="title-cont relative flex flex-row justify-center overflow-hidden bg-[url('/banner/title-sketch-texture.webp')] py-20 text-6xl font-bold tracking-wider bg-blend-multiply">
         <h1 className="text-black">
           Our <span className="text-ragered">Culture.</span>
         </h1>

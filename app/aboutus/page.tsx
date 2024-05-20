@@ -9,7 +9,6 @@ const AboutUs: React.FC = () => {
       <div className="banner inset-0 mt-navheight box-border h-[720px] overflow-hidden bg-[url('/banner/about-banner.webp')] bg-cover bg-center"></div>
 
       <AboutText />
-      {/* <History year={2005} title="founding" content="lorem" /> */}
       <TeamSum />
       <Culture />
     </div>

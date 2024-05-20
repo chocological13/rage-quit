@@ -6,11 +6,11 @@ const AboutText = () => {
       id="about-text"
       className="flex w-full flex-col items-center bg-divblack px-1 py-14 text-white md:flex-row md:px-10 md:py-36"
     >
-      <p className="mb-20 flex-shrink text-wrap text-center text-4xl font-bold md:my-auto md:w-1/4 md:text-6xl">
+      <p className="mb-20 flex-shrink text-wrap text-center text-4xl font-bold md:my-auto md:w-1/4 md:text-7xl">
         Our
         <span className="font-semibold text-ragered"> Story.</span>
       </p>
-      <p className="w:px-0 w-full text-wrap px-2 text-justify leading-6 md:w-3/4">
+      <p className="w:px-0 w-full text-wrap px-2 text-justify text-lg font-light leading-6 md:w-3/4">
         Welcome to{" "}
         <span className="font-semibold text-ragered">RageQuit Games</span>,
         where passion and innovation collide to create unforgettable gaming

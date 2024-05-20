@@ -28,7 +28,7 @@ const AccordionItemLocal: React.FC<AccordionItemProps> = ({
       <AccordionTrigger className=" min-h-24 text-left text-2xl md:min-h-40">
         {title}
       </AccordionTrigger>
-      <AccordionContent className=" bg-slate-600 text-lg leading-7 mix-blend-lighten">
+      <AccordionContent className=" bg-slate-600 text-lg leading-7 -tracking-wide mix-blend-lighten">
         <p>{content}</p>
       </AccordionContent>
     </AccordionItem>

@@ -6,12 +6,17 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import Socials from "./socials";
 
 const SocialsList: React.FC = () => {
-  const icons = [<FacebookIcon />, <XIcon />, <LinkedInIcon />, <YouTubeIcon />];
+  const icons = [
+    <FacebookIcon />,
+    <XIcon />,
+    <LinkedInIcon />,
+    <YouTubeIcon />,
+  ];
 
   return (
     <ul id="socials-list" className="flex flex-row gap-3">
-      {icons.map((icon) => (
-        <Socials icon={icon} />
+      {icons.map((icon, index) => (
+        <Socials key={index} icon={icon} />
       ))}
     </ul>
   );

@@ -10,27 +10,27 @@ const ListProd: React.FC = () => {
       section: "Games",
       props: [
         {
-          img: "/games-lol.png",
+          img: "/products/games-lol.png",
           alt: "games-lol",
           title: "Realm of RIVALS",
         },
         {
-          img: "/games-val.png",
+          img: "/products/games-val.png",
           alt: "games-val",
           title: "Valorant VANGUARDS",
         },
         {
-          img: "/games-tft.png",
+          img: "/products/games-tft.png",
           alt: "games-tft",
           title: "Tactics TRIUMPH",
         },
         {
-          img: "/games-rift.png",
+          img: "/products/games-rift.png",
           alt: "games-rift",
           title: "Rift LEGENDS",
         },
         {
-          img: "/games-lor.png",
+          img: "/products/games-lor.png",
           alt: "games-lor",
           title: "Runeterra CLASH",
         },
@@ -41,12 +41,12 @@ const ListProd: React.FC = () => {
       section: "Esports",
       props: [
         {
-          img: "/esports-lol.png",
+          img: "/products/esports-lol.png",
           alt: "esports-lol",
           title: "Rivalry ROYALE",
         },
         {
-          img: "/esports-val.png",
+          img: "/products/esports-val.png",
           alt: "esports-val",
           title: "Valorant VALOR CUP",
         },
@@ -57,12 +57,12 @@ const ListProd: React.FC = () => {
       section: "Entertainment",
       props: [
         {
-          img: "/ent-arc.png",
+          img: "/products/ent-arc.png",
           alt: "ent-arc",
           title: "ARCADIA",
         },
         {
-          img: "/ent-mus.png",
+          img: "/products/ent-mus.png",
           alt: "ent-mus",
           title: "Rage BEATS",
         },

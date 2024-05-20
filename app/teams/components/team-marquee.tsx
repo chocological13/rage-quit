@@ -53,8 +53,8 @@ const TeamMarquee: React.FC = () => {
 
   return (
     <div className="marquee-holder flex max-w-full flex-col gap-3">
-      <Marquee speed={1} pauseOnHover>
-        <div className="marquee-1 flex flex-row gap-2">
+      <Marquee speed={30} pauseOnHover>
+        <div className="marquee-30 flex flex-row gap-2">
           {imageList.map((image, index) => (
             <Image
               key={index}
@@ -68,7 +68,7 @@ const TeamMarquee: React.FC = () => {
           ))}
         </div>
       </Marquee>
-      <Marquee speed={1} direction="right" pauseOnHover>
+      <Marquee speed={30} direction="right" pauseOnHover>
         <div className="marquee-2 hidden gap-2 md:flex md:flex-row">
           {imageList.map((image, index) => (
             <Image
@@ -83,7 +83,7 @@ const TeamMarquee: React.FC = () => {
           ))}
         </div>
       </Marquee>
-      <Marquee speed={1} pauseOnHover>
+      <Marquee speed={30} pauseOnHover>
         <div className="marquee-3 hidden gap-2 md:flex md:flex-row">
           {imageList.map((image, index) => (
             <Image

@@ -2,8 +2,8 @@ import React from "react";
 
 const TeamText: React.FC = () => {
   return (
-    <div className="hero relative overflow-hidden bg-[url('/banner/sketch-ekko.jpg')] bg-auto bg-no-repeat bg-blend-multiply">
-      <div className="team-text text-center text-lg tracking-wide text-slate-600 md:text-2xl">
+    <div className="hero relative overflow-hidden">
+      <div className="team-text bg-slate-300 bg-opacity-20 text-center text-lg tracking-wide text-slate-600 md:bg-none md:text-2xl">
         <p>
           At <span className="font-semibold text-ragered">RageQuit Games</span>,
           our team is the heart and soul of everything we do. Each member brings

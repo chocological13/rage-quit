@@ -4,10 +4,10 @@ import React from "react";
 const ForgeDetails: React.FC = () => {
   return (
     <>
-      <div className="forge-cont text-bgwhite py-20">
-        <div className="title-cont mx-auto md:w-4/5">
+      <div className="forge-cont py-20 text-bgwhite">
+        <div className="title-cont mx-auto w-5/6 md:w-4/5">
           <div className="inner-cont flex flex-col items-center">
-            <p className="py-4 font-semibold md:mb-5 md:text-5xl">
+            <p className="mb-5 py-4 text-5xl font-semibold">
               Rage <span className="text-ragered">Forge</span>
             </p>
             <p className="text-center font-extralight leading-7 tracking-wider">

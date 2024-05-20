@@ -9,9 +9,11 @@ const Teams: React.FC = () => {
   return (
     <div className="max-w-full bg-ragewhite">
       <TeamHero />
-      <section className="team-text-cont mx-auto flex w-9/12 py-20 md:py-32">
-        <TeamText />
-      </section>
+      <div className="bg-[url('/banner/sketch-ekko.jpg')] bg-auto bg-left-bottom bg-no-repeat">
+        <section className="team-text-cont mx-auto flex w-9/12 py-20 md:py-32">
+          <TeamText />
+        </section>
+      </div>
       <section className="marquee pb-20">
         <TeamMarquee />
       </section>

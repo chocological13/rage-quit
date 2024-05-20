@@ -3,7 +3,7 @@ import React from "react";
 
 const ProdBanner: React.FC = () => {
   return (
-    <div className="hero-bg bg-fill relative flex h-[720px] flex-row overflow-hidden bg-slate-600 bg-opacity-60 bg-[url('/banner/prod-banner.webp')] bg-cover bg-center bg-no-repeat py-20 bg-blend-soft-light">
+    <div className="hero-bg bg-fill relative flex h-[720px] flex-row overflow-hidden bg-slate-600 bg-opacity-60 bg-[url('/banner/prod-banner-mobile.webp')] bg-cover bg-center bg-no-repeat py-20 bg-blend-soft-light md:bg-[url('/banner/prod-banner.webp')]">
       <div className="hero-text-cont flex w-full flex-col justify-center text-white">
         <div className="mx-auto">
           <SectionTitle title="games & entertainment" />

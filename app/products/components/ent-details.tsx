@@ -1,7 +1,8 @@
 import React from "react";
 import "@/app/globals.css";
 import SectionTitle from "@/components/section-title";
-import Image from "next/image";
+import { Suspense } from "react";
+import { Skeleton } from "@mui/material";
 
 const EntertainmentDetails: React.FC = () => {
   const DATA = [
@@ -33,8 +34,8 @@ const EntertainmentDetails: React.FC = () => {
         </div>
       </div>
       <div className="cont">
-        <div className="flex justify-center md:pt-20">
-          <p className="text-justify leading-7 tracking-wider md:w-5/6">
+        <div className="flex items-center justify-center pt-10 md:pt-20">
+          <p className="w-5/6 text-justify leading-7 tracking-wider">
             At{" "}
             <span className="font-semibold text-ragered">RageQuit Games</span>,
             our entertainment offerings extend beyond gaming to include a rich
@@ -45,8 +46,17 @@ const EntertainmentDetails: React.FC = () => {
           </p>
         </div>
         <div className="ent-desc flex flex-row items-center justify-center gap-10 py-20 md:px-20 md:py-16">
-          <div className="relative flex flex-row items-center gap-3 md:px-10">
-            <div>vid here?</div>
+          <div className="relative flex w-5/6 flex-col items-center gap-10 text-justify md:w-full md:flex-row md:px-10">
+            <div>
+              <Suspense fallback={<Skeleton />}>
+                <video className="object-cover" autoPlay muted loop>
+                  <source
+                    src="https://res.cloudinary.com/dymumlmnn/video/upload/v1716187108/ARC_Finaltrailer_Webclip_g33ziy.webm"
+                    type="video/mp4"
+                  />
+                </video>
+              </Suspense>
+            </div>
             <div className="desc">
               <ul>
                 {DATA.map((ent, index) => (

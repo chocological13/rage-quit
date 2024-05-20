@@ -4,7 +4,7 @@ const AboutText = () => {
   return (
     <section
       id="about-text"
-      className="flex w-full flex-col items-center bg-divblack px-1 py-14 text-white md:flex-row md:px-10 md:py-36"
+      className="flex w-full flex-col items-center bg-divblack px-1 px-5 py-14 text-white md:flex-row md:gap-10 md:px-10 md:py-36"
     >
       <p className="mb-20 flex-shrink text-wrap text-center text-4xl font-bold md:my-auto md:w-1/4 md:text-7xl">
         Our

@@ -30,7 +30,7 @@ const Culture: React.FC = () => {
 
   return (
     <section className="culture justify-center bg-[url('/banner/culture-glhf.webp')] text-white">
-      <div className="title-cont relative flex flex-row justify-center overflow-hidden bg-[url('/banner/title-sketch-texture.webp')] py-20 text-6xl font-bold tracking-wider bg-blend-multiply">
+      <div className="title-cont relative flex flex-row justify-center overflow-hidden bg-[url('/banner/title-sketch-texture.webp')] py-20 text-5xl font-bold tracking-wider bg-blend-multiply md:text-6xl">
         <h1 className="text-black">
           Our <span className="text-ragered">Culture.</span>
         </h1>
@@ -46,7 +46,7 @@ const Culture: React.FC = () => {
         type="single"
         collapsible
         orientation="horizontal"
-        className="mx-auto grid w-3/4 md:py-24"
+        className="mx-auto grid w-3/4 py-10 md:py-24"
       >
         {DATA.map((each) => (
           <AccordionItemLocal key={each.id} {...each} />

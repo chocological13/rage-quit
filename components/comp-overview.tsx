@@ -11,7 +11,7 @@ const CompOv: React.FC = () => {
         <br />
         game company in the world
       </p>
-      <p className="w:px-0 w-full text-wrap px-2 text-justify md:w-1/2">
+      <p className="w:px-0 w-full text-wrap px-2 text-justify text-lg md:w-1/2">
         At <span className="font-semibold text-ragered">RageQuit Games</span>,
         founded in 20xx, our mission is to revolutionize gaming, one epic
         experience at a time.

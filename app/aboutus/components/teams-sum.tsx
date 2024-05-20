@@ -44,7 +44,7 @@ const TeamSum: React.FC = () => {
 
   return (
     <section className="team-container bg-titlegray px-4 py-16 md:py-24">
-      <h2 className="mb-9 text-center text-6xl font-bold tracking-wider md:mb-20">
+      <h2 className="mb-9 text-center text-5xl font-bold tracking-wider md:mb-20 md:text-6xl">
         Our <span className="text-ragered">RageQuitters.</span>
       </h2>
 

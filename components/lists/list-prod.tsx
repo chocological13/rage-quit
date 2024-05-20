@@ -81,7 +81,7 @@ const ListProd: React.FC = () => {
           />
         ))}
       </div>
-      <CarouselForge />
+      <CarouselForge showTitle={true} />
       <CTAProd />
     </section>
   );

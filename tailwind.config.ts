@@ -61,6 +61,7 @@ const config: Config = {
         navsearch: "#302c2c",
         ragered: "#d8343c",
         ragewhite: "#e8e4e4",
+        bgwhite: "#ececec",
         bgblack: "#201c1c",
         divblack: "#0a0a0a",
         titlegray: "#dbd9d6",

@@ -21,7 +21,7 @@ const ProdDetailsLayout: React.FC<ProdDetailsLayoutProps> = ({
     <>
       {index % 2 === 1 ? (
         <>
-          <div className="prod-details bg-bgblack md:grid md:grid-cols-2 md:gap-10">
+          <div className="prod-details bg-bgblack md:mb-5 md:grid md:grid-cols-2 md:gap-10">
             <div className="">
               <ProdDetailsText title={text.title} desc={text.desc} id={index} />
             </div>
@@ -31,7 +31,7 @@ const ProdDetailsLayout: React.FC<ProdDetailsLayoutProps> = ({
           </div>
         </>
       ) : (
-        <div className="prod-details bg-bgblack md:grid md:grid-cols-2 md:gap-10">
+        <div className="prod-details bg-bgblack md:mb-5 md:grid md:grid-cols-2 md:gap-10">
           <div className="my-auto">
             <Card img={card.img} alt={card.alt} title={card.title} />
           </div>

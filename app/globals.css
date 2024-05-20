@@ -42,37 +42,10 @@
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 30px));
 }
 
-.marquee-holder {
-  position: relative;
-  width: 100vw;
-  background-color: $boxify-bg-light-dark;
-  overflow: hidden;
-  z-index: 1;
-  margin: 0;
-  padding: 0;
-}
-
-.marquee-1,
-.marquee-3 {
-  height: 100%;
-  white-space: nowrap;
-  animation: scrollText 20s infinite linear;
-  margin: 0;
-  font-size: 0;
-  display: flex;
-  justify-content: space-between;
-  width: fit-content;
-}
-
-.marquee-2 {
-  height: 100%;
-  white-space: nowrap;
-  animation: scrollTextRev 20s infinite linear;
-  margin: 0;
-  font-size: 0;
-  display: flex;
-  justify-content: space-between;
-  width: fit-content;
+@media only screen and (min-width: 768px) {
+  .hero__bg__md {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 30px));
+  }
 }
 
 .MuiCardContent-root {

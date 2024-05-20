@@ -6,18 +6,13 @@ import Link from "next/link";
 const EsportsDetails = () => {
   return (
     <>
-      <div className="e-sports-banner bg-fill h-[680px] bg-bgblack bg-[url('/banner/esports-banner.webp')] bg-center bg-no-repeat bg-blend-lighten">
-        {/* <div className="flex h-full justify-center align-middle">
-          <div className="flex flex-col justify-center">
-          </div>
-        </div> */}
-      </div>
-      <div className="esports-text p-3 px-10">
+      <div className="e-sports-banner bg-fill h-[680px] bg-bgblack bg-[url('/banner/esports-banner.webp')] bg-center bg-no-repeat bg-blend-lighten"></div>
+      <div className="esports-text bg-bgwhite bg-[url('/banner/sketch-poppy.webp')] bg-left-bottom bg-no-repeat p-3 px-10 mix-blend-darken">
         <div className="small-title flex justify-center py-10 md:mx-10">
           <SectionTitle title="E-Sports" />
         </div>
-        <div className="esports-det grid gap-10 md:grid-cols-[3fr_1fr]">
-          <div className="bg-ragewhite py-3 bg-blend-darken md:order-2 md:mb-5">
+        <div className="esports-det grid gap-10 py-10 md:grid-cols-[3fr_1fr]">
+          <div className="py-3 bg-blend-darken md:order-2 md:py-10">
             <Image
               src="/misc/faker.webp"
               width={500}
@@ -26,7 +21,7 @@ const EsportsDetails = () => {
             />
           </div>
           <div className=" flex flex-col gap-10 md:order-1 md:my-auto md:-translate-y-0.5">
-            <p className="text-justify leading-relaxed tracking-wide md:leading-loose">
+            <p className="bg-slate-300 bg-opacity-20 text-justify leading-relaxed tracking-wide md:leading-loose">
               At{" "}
               <span className="font-semibold text-ragered">RageQuit Games</span>
               , our esports scene blends high-stakes competition with

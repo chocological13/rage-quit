@@ -9,7 +9,15 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-const CarouselForge: React.FC = () => {
+interface CarouselForgeProps {
+  showTitle: boolean;
+}
+
+const CarouselForge: React.FC<CarouselForgeProps> = ({
+  showTitle,
+}: {
+  showTitle: boolean;
+}) => {
   const DATA = [
     {
       id: "prod0",
@@ -50,9 +58,11 @@ const CarouselForge: React.FC = () => {
   ];
 
   return (
-    <div id="scroll-forge" className="w-full bg-bgblack py-20">
+    <div id="scroll-forge" className="w-full bg-bgblack py-10">
       <div className="mt-10 px-10">
-        <p className="text-5xl font-semibold text-white">Rage Forge</p>
+        {showTitle && (
+          <p className="mb-10 text-5xl font-semibold text-white">Rage Forge</p>
+        )}
         <div className="flex gap-3 md:gap-5">
           <Carousel className="mx-5">
             <CarouselContent>

@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import "@/app/globals.css";
 import Marquee from "react-fast-marquee";
 
 const TeamMarquee: React.FC = () => {
@@ -54,45 +53,51 @@ const TeamMarquee: React.FC = () => {
 
   return (
     <div className="marquee-holder flex max-w-full flex-col gap-3">
-      <div className="marquee-1 flex flex-row gap-2">
-        {imageList.map((image, index) => (
-          <Image
-            key={index}
-            src={image}
-            alt={`image-${index}`}
-            width={0}
-            height={0}
-            sizes="100vw"
-            className="h-auto w-auto"
-          />
-        ))}
-      </div>
-      <div className="marquee-2 hidden gap-2 md:flex md:flex-row">
-        {imageList.map((image, index) => (
-          <Image
-            key={index}
-            src={image}
-            alt={`image-${index}`}
-            width={0}
-            height={0}
-            sizes="100vw"
-            className="h-auto w-auto"
-          />
-        ))}
-      </div>
-      <div className="marquee-3 hidden gap-2 md:flex md:flex-row">
-        {imageList.map((image, index) => (
-          <Image
-            key={index}
-            src={image}
-            alt={`image-${index}`}
-            width={0}
-            height={0}
-            sizes="100vw"
-            className="h-auto w-auto"
-          />
-        ))}
-      </div>
+      <Marquee speed={1} pauseOnHover>
+        <div className="marquee-1 flex flex-row gap-2">
+          {imageList.map((image, index) => (
+            <Image
+              key={index}
+              src={image}
+              alt={`image-${index}`}
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="h-auto w-auto"
+            />
+          ))}
+        </div>
+      </Marquee>
+      <Marquee speed={1} direction="right" pauseOnHover>
+        <div className="marquee-2 hidden gap-2 md:flex md:flex-row">
+          {imageList.map((image, index) => (
+            <Image
+              key={index}
+              src={image}
+              alt={`image-${index}`}
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="h-auto w-auto"
+            />
+          ))}
+        </div>
+      </Marquee>
+      <Marquee speed={1} pauseOnHover>
+        <div className="marquee-3 hidden gap-2 md:flex md:flex-row">
+          {imageList.map((image, index) => (
+            <Image
+              key={index}
+              src={image}
+              alt={`image-${index}`}
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="h-auto w-auto"
+            />
+          ))}
+        </div>
+      </Marquee>
     </div>
   );
 };

@@ -2,6 +2,8 @@ import React from "react";
 import ProdBanner from "./components/prod-banner";
 import GamesDetails from "./components/games-details";
 import EsportsDetails from "./components/esports-details";
+import EntertainmentDetails from "./components/ent-details";
+import ForgeDetails from "./components/forge-det";
 
 const Products: React.FC = () => {
   return (
@@ -14,6 +16,12 @@ const Products: React.FC = () => {
       </section>
       <section className="esports-details bg-ragewhite">
         <EsportsDetails />
+      </section>
+      <section className="ent-details">
+        <EntertainmentDetails />
+      </section>
+      <section className="forge-details bg-bgblack">
+        <ForgeDetails />
       </section>
     </div>
   );

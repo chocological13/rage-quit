@@ -21,7 +21,7 @@ const EsportsDetails = () => {
             />
           </div>
           <div className=" flex flex-col gap-10 md:order-1 md:my-auto md:-translate-y-0.5">
-            <p className="bg-slate-300 bg-opacity-20 text-justify leading-relaxed tracking-wide md:leading-loose">
+            <p className="bg-slate-400 bg-opacity-15 p-2 text-justify text-lg leading-relaxed tracking-wide md:leading-loose">
               At{" "}
               <span className="font-semibold text-ragered">RageQuit Games</span>
               , our esports scene blends high-stakes competition with

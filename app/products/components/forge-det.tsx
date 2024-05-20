@@ -7,10 +7,10 @@ const ForgeDetails: React.FC = () => {
       <div className="forge-cont py-20 text-bgwhite">
         <div className="title-cont mx-auto w-5/6 md:w-4/5">
           <div className="inner-cont flex flex-col items-center">
-            <p className="mb-5 py-4 text-5xl font-semibold">
+            <p className="mb-5 py-4 text-6xl font-semibold tracking-wider">
               Rage <span className="text-ragered">Forge</span>
             </p>
-            <p className="text-center font-extralight leading-7 tracking-wider">
+            <p className="text-center text-lg font-extralight leading-7 tracking-wider">
               At{" "}
               <span className="font-semibold text-ragered">RageQuit Games</span>
               , <span className="font-semibold">Rage Forge</span> is where

@@ -33,9 +33,9 @@ const EntertainmentDetails: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="cont">
+      <div className="cont text-lg font-light text-navsearch">
         <div className="flex items-center justify-center pt-10 md:pt-20">
-          <p className="w-5/6 text-justify leading-7 tracking-wider">
+          <p className="w-5/6 text-justify font-normal leading-7 tracking-wider">
             At{" "}
             <span className="font-semibold text-ragered">RageQuit Games</span>,
             our entertainment offerings extend beyond gaming to include a rich
@@ -69,14 +69,6 @@ const EntertainmentDetails: React.FC = () => {
                 ))}
               </ul>
             </div>
-            {/* <div className="">
-            <Image
-              src={"/banner/sketch-poppy.webp"}
-              width={640}
-              height={522}
-              alt="poppy sketch"
-            />
-          </div> */}
           </div>
         </div>
       </div>

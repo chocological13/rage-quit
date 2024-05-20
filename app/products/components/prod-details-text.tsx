@@ -24,7 +24,7 @@ const ProdDetailsText: React.FC<ProdDetailsTextProps> = ({
         >
           <p className="text-4xl font-semibold text-ragered">{title}</p>
           <p
-            className={`desc ${id % 2 === 1 && `md:text-end`} text-justify leading-5 tracking-wider`}
+            className={`desc ${id % 2 === 1 && `md:text-end`} text-justify text-lg font-light leading-5 tracking-wider`}
           >
             {desc}
           </p>
@@ -32,7 +32,7 @@ const ProdDetailsText: React.FC<ProdDetailsTextProps> = ({
         <div className="flex justify-center md:block">
           <button
             type="button"
-            className="rounded-md bg-ragewhite p-2 px-2 font-semibold text-bgblack underline underline-offset-8 hover:bg-ragered hover:text-ragewhite"
+            className="rounded-xl bg-ragewhite p-2 px-3 font-semibold text-bgblack underline underline-offset-8 hover:bg-ragered hover:text-ragewhite"
           >
             Play Now!
           </button>

@@ -79,7 +79,7 @@ const GamesDetails: React.FC = () => {
     <>
       {isMedium ? (
         <div className="mx-auto w-[95%] px-2 py-20">
-          <div className="title mb-10 text-center text-5xl font-semibold text-ragewhite">
+          <div className="title mb-20 text-center text-6xl font-semibold tracking-wide text-ragewhite">
             <p>
               Our <span className="text-ragered">Games.</span>
             </p>
@@ -90,7 +90,7 @@ const GamesDetails: React.FC = () => {
         </div>
       ) : (
         <div className="mx-auto w-[95%] px-2 py-20">
-          <div className="title mb-20 text-center text-5xl font-semibold text-ragewhite md:mb-32">
+          <div className="title mb-10 text-center text-5xl font-semibold tracking-wide text-ragewhite md:mb-32">
             <p>
               Our <span className="text-ragered">Games.</span>
             </p>

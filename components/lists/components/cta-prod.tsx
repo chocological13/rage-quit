@@ -25,7 +25,7 @@ const CTAProd: React.FC = () => {
         </div>
         <div className="cta-img">
           <Image
-            src={"/products/ctaprod.webp"}
+            src={"/banner/ctaprod.webp"}
             width={796}
             height={566}
             alt="CTA Products"

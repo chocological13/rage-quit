@@ -6,18 +6,30 @@ import "@/app/globals.css";
 const CTAProd: React.FC = () => {
   return (
     <>
-      <div id="cta-prod" className="md:flex md:justify-between mt-16 p-0 md:m-0 border-t-bgblack">
-        <div className="cta-content flex flex-col items-center justify-center mx-auto">
-          <div className="container-inner max-w-[620px] mx-auto text-center py-8 px-4 pt-0 md:mx-auto md:px-30 md:py-8">
-            <h2 className="text-4xl font-bold leading-none text-black mb-6 block isolate">Explore our forge!!</h2>
-            <p className="text-lg text-gray-600 leading-tight tracking-tighter mx-auto font-bold max-w-xs">Discover more about our games and entertainments now</p>
+      <div
+        id="cta-prod"
+        className="mt-16 border-t-bgblack p-0 md:m-0 md:flex md:justify-between"
+      >
+        <div className="cta-content mx-auto flex flex-col items-center justify-center">
+          <div className="container-inner md:px-30 mx-auto max-w-[620px] px-4 py-8 pt-0 text-center md:mx-auto md:py-8">
+            <h2 className="isolate mb-6 block text-4xl font-bold leading-none text-black">
+              Explore our forge!!
+            </h2>
+            <p className="mx-auto max-w-xs text-lg font-bold leading-tight tracking-tighter text-gray-600">
+              Discover more about our games and entertainments now
+            </p>
           </div>
-          <div className="block mb-16 md:inline-flex">
+          <div className="mb-16 block md:inline-flex">
             <CTABtn title="Learn More" link="/products" />
           </div>
         </div>
         <div className="cta-img">
-          <Image src={"/ctaprod.webp"} width={796} height={566} alt="CTA Products" />
+          <Image
+            src={"/products/ctaprod.webp"}
+            width={796}
+            height={566}
+            alt="CTA Products"
+          />
         </div>
       </div>
     </>

@@ -24,7 +24,7 @@ const ProdDetailsText: React.FC<ProdDetailsTextProps> = ({
         >
           <p className="text-4xl font-semibold text-ragered">{title}</p>
           <p
-            className={`desc ${id % 2 === 1 && `md:text-end`} text-justify text-lg font-light leading-5 tracking-wider`}
+            className={`desc ${id % 2 === 1 && `md:text-end`} text-lg font-light leading-5 tracking-wider`}
           >
             {desc}
           </p>

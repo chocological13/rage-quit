@@ -1,7 +1,6 @@
 import React from "react";
 import NavLinks from "./ui/nav-links";
 import NavIcon from "./ui/nav-icon";
-import SearchBar from "./ui/search-bar";
 import SignInBtn from "./ui/signin-btn";
 
 const NavBar: React.FC = () => {
@@ -41,11 +40,7 @@ const NavBar: React.FC = () => {
           ))}
         </ul>
       </div>
-      <div className="flex items-center">
-        <div className="relative hidden md:block">
-          <SearchBar />
-        </div>
-      </div>
+      <div className="empty-cont"></div>
       <div className="relative mt-2 hidden w-3/4 items-center justify-center align-middle md:top-4 md:block">
         <SignInBtn />
       </div>

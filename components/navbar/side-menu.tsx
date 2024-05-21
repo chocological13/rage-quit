@@ -1,6 +1,5 @@
 import React from "react";
 import NavLinks from "@/components/navbar/ui/nav-links";
-import SearchBar from "@/components/navbar/ui/search-bar";
 import SignInBtn from "@/components/navbar/ui/signin-btn";
 import CloseIcon from "@mui/icons-material/Close";
 import { MouseEventHandler } from "react";
@@ -62,9 +61,6 @@ const SideMenu: React.FC<SideMenuProps> = ({ toggleDrawer }: SideMenuProps) => {
               ))}
             </button>
           </ul>
-        </div>
-        <div className="search-bar my-6">
-          <SearchBar />
         </div>
         <div className="m-auto flex items-center justify-center align-middle">
           <SignInBtn />

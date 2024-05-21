@@ -12,9 +12,9 @@ const CTAProd: React.FC = () => {
       >
         <div className="cta-content mx-auto flex flex-col items-center justify-center">
           <div className="container-inner md:px-30 mx-auto max-w-[620px] px-4 py-8 pt-0 text-center md:mx-auto md:py-8">
-            <h2 className="isolate mb-6 block text-4xl font-bold leading-none text-black">
+            <p className="isolate mb-6 block text-4xl font-bold leading-none text-black">
               Explore our forge!!
-            </h2>
+            </p>
             <p className="mx-auto max-w-xs text-lg font-bold leading-tight tracking-tighter text-gray-600">
               Discover more about our games and entertainments now
             </p>

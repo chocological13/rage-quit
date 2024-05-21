@@ -61,9 +61,9 @@ const EntertainmentDetails: React.FC = () => {
               <ul>
                 {DATA.map((ent, index) => (
                   <li key={index} className="mb-5">
-                    <h3 className="title-ent font-semibold text-ragered">
+                    <p className="title-ent font-semibold text-ragered">
                       {ent.title}
-                    </h3>
+                    </p>
                     <p>{ent.desc}</p>
                   </li>
                 ))}

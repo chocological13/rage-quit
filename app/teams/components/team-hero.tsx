@@ -10,9 +10,9 @@ const TeamHero: React.FC = () => {
           <div className="grid--gutterless flex flex-col justify-between md:flex-row-reverse md:gap-14">
             <div className="grid__item mb-10">
               <SectionTitle title="teams" />
-              <h1 className="hero__heading mt-3 text-[54px] font-bold text-white md:text-[80px]">
+              <p className="hero__heading mt-3 text-[54px] font-bold text-white md:text-[80px]">
                 Our <span className="text-ragered">RageQuitters</span>
-              </h1>
+              </p>
             </div>
 
             <Image

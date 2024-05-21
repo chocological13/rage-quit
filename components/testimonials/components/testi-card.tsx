@@ -9,20 +9,32 @@ export interface TestiCardProps {
   content: string;
 }
 
-const TestiCard: React.FC<TestiCardProps> = ({ content, name }: { content: string; name: string }) => {
+const TestiCard: React.FC<TestiCardProps> = ({
+  content,
+  name,
+}: {
+  content: string;
+  name: string;
+}) => {
   return (
-    <div className="flex justify-between  flex-col py-12 rounded-[20px]  max-w-[350px]  mx-auto my-0">
+    <div className="mx-auto my-0  flex max-w-[350px] flex-col  justify-between  rounded-[20px] py-12">
       <Icon color="warning">
         <FormatQuote />
       </Icon>
-      <p className="font-normal text-[18px] leading-[32.4px] text-white my-10">{content}</p>
+      <p className="my-10 text-[18px] font-normal leading-[32.4px] text-white">
+        {content}
+      </p>
       <div className="flex flex-row">
         <Icon color="warning">
           <Person />
         </Icon>
-        <div className="flex flex-col ml-4">
-          <h4 className=" font-semibold text-[20px] leading-[32px] text-white">{name}</h4>
-          <p className=" font-normal text-[16px] leading-[24px] text-gray-500">Player since 200X</p>
+        <div className="ml-4 flex flex-col">
+          <p className=" text-[20px] font-semibold leading-[32px] text-white">
+            {name}
+          </p>
+          <p className=" text-[16px] font-normal leading-[24px] text-gray-500">
+            Player since 200X
+          </p>
         </div>
       </div>
     </div>

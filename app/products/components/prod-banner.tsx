@@ -9,9 +9,9 @@ const ProdBanner: React.FC = () => {
           <SectionTitle title="games & entertainment" />
         </div>
         <div>
-          <h1 className="my-10 text-center text-5xl font-bold tracking-wider md:text-9xl">
+          <p className="my-10 text-center text-5xl font-bold tracking-wider md:text-9xl">
             Explore <span className="text-ragered">Our Forge</span>
-          </h1>
+          </p>
         </div>
         <div>
           <p className="text-center text-xl font-extralight tracking-wider">

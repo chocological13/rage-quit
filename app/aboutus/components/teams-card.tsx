@@ -32,7 +32,7 @@ const TeamsCard: React.FC<TeamsCardProps> = ({
         />
         <div className="absolute inset-0 bg-gray-900 opacity-20 hover:opacity-75"></div>
         <div className="absolute bottom-0 mx-auto w-full bg-black bg-opacity-20 px-4 pb-4 pt-2 text-center text-wwhite bg-blend-darken">
-          <h3 className="text-2xl font-bold">{name}</h3>
+          <p className="text-2xl font-bold">{name}</p>
           <small className="tracking-wider">{role}</small>
         </div>
       </div>

@@ -31,9 +31,9 @@ const Culture: React.FC = () => {
   return (
     <section className="culture justify-center bg-[url('/banner/culture-glhf.webp')] text-white">
       <div className="title-cont relative flex flex-row justify-center overflow-hidden bg-[url('/banner/title-sketch-texture.webp')] py-20 text-5xl font-bold tracking-wider bg-blend-multiply md:text-6xl">
-        <h1 className="text-black">
+        <p className="text-black">
           Our <span className="text-ragered">Culture.</span>
-        </h1>
+        </p>
         <Image
           src={"/banner/title-sketch-ahri.webp"}
           width={500}

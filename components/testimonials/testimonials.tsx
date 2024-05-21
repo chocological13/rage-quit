@@ -35,10 +35,10 @@ const Testimonials: React.FC = () => {
       className="relative flex flex-col items-center justify-center bg-bgblack py-6 sm:py-16"
     >
       <div className="sticky z-[1] mb-6 flex w-full flex-col items-center justify-between px-3 sm:mb-16 md:relative md:my-3 md:flex-row md:px-0">
-        <h2 className="xs:text-[48px] xs:leading-[76.8px] flex w-full justify-center text-[40px] font-semibold leading-[66.8px] text-white">
+        <p className="xs:text-[48px] xs:leading-[76.8px] flex w-full justify-center text-[40px] font-semibold leading-[66.8px] text-white">
           What our players <br className="hidden sm:block" /> have to say about
           us
-        </h2>
+        </p>
         <div className="mt-6 w-full md:mt-0">
           <p className="font-poppins max-w-sm text-lg font-medium leading-tight text-gray-300 md:mx-3">
             From casual gamers to esports enthusiasts, our community shares

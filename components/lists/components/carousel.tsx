@@ -74,8 +74,8 @@ const CarouselForge: React.FC<CarouselForgeProps> = ({
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="text-ragewhite" />
+            <CarouselNext className="text-ragewhite" />
           </Carousel>
         </div>
       </div>

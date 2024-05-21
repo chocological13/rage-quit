@@ -4,7 +4,7 @@ const CompOv: React.FC = () => {
   return (
     <section
       id="company-overview"
-      className="my-36 flex w-full flex-col items-center px-1 md:px-0"
+      className="flex w-full flex-col items-center bg-ragewhite px-1 py-36 md:px-0"
     >
       <p className="mb-20 text-center text-6xl font-bold">
         We aspire to be the most player-focused

@@ -1,5 +1,5 @@
-import { useMediaQuery } from "@mui/material";
 import React from "react";
+import Modal from "@/components/modal";
 
 export interface ProdDetailsTextProps {
   title: string;
@@ -16,6 +16,15 @@ const ProdDetailsText: React.FC<ProdDetailsTextProps> = ({
   desc: string;
   id: number;
 }) => {
+  const button = (
+    <button
+      type="button"
+      className="rounded-xl bg-ragewhite p-2 px-3 font-semibold text-bgblack underline underline-offset-8 hover:bg-ragered hover:text-ragewhite"
+      aria-label="play link"
+    >
+      Play Now!
+    </button>
+  );
   return (
     <div className="text-ragewhite">
       <div className={`flex flex-col ${id % 2 === 1 && `md:items-end`} py-10`}>
@@ -30,13 +39,11 @@ const ProdDetailsText: React.FC<ProdDetailsTextProps> = ({
           </p>
         </div>
         <div className="flex justify-center md:block">
-          <button
-            type="button"
-            className="rounded-xl bg-ragewhite p-2 px-3 font-semibold text-bgblack underline underline-offset-8 hover:bg-ragered hover:text-ragewhite"
-            aria-label="play link"
-          >
-            Play Now!
-          </button>
+          <Modal
+            el={button}
+            title="Uh.. oh.. :("
+            desc="We're sorry, this game is not available yet. Please check back soon!"
+          />
         </div>
       </div>
     </div>

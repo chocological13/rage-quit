@@ -5,7 +5,7 @@ import Testimonials from "@/components/testimonials/testimonials";
 
 export default function Home() {
   return (
-    <main className="bg-ragewhite w-full">
+    <main className="w-full bg-ragewhite">
       <Hero />
       <CompOv />
       <ListProd />

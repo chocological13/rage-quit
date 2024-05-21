@@ -1,4 +1,5 @@
 import React from "react";
+import Modal from "@/components/modal";
 
 const SignInBtn: React.FC = () => {
   return (
